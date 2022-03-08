@@ -112,6 +112,7 @@ header::after {
 .button:hover {
 	color: var(--color-black);
 	background-color: var(--color-font-white);
+	cursor: pointer;
 }
 .button:not(last-of-type) {
 	margin-right: 10px;
@@ -199,10 +200,33 @@ li a {
 	background-color: var(--color-gray);
 	border-radius: 5px;
 	transition: 0.2s;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1rem;
 }
 .project:hover {
 	outline: 2px solid var(--color-accent-green);
 	transform: scale(103%);
+	cursor: pointer;
+}
+
+.project-desc {
+	color: var(--color-light-gray);
+	font-size: 0.9rem;
+	padding: 0.5rem;
+	text-align: left;
+}
+.project-title {
+	margin: 0;
+}
+.project-resources i {
+	color: var(--color-accent-green);
+	transition: 0.2s;
+}
+.project-resources i:hover {
+	color: var(--color-accent-white);
 }
 
 /*Announcements*/
@@ -232,7 +256,7 @@ li a {
 	border-radius: 5px;
 	transition: 0.2s;
 	width: 100%;
-	height: 80%;
+	height: 83.5%;
 
 	padding: 1rem;
 }
@@ -302,9 +326,11 @@ li a {
 	}
 	.signature {
 		margin-top: 30px;
+		padding-bottom: 20px;
 	}
 	.project-grid {
-		grid-template-columns: 1fr 1fr;
+		padding: 30px;
+		grid-template-columns: 1fr;
 		grid-template-rows: auto;
 		grid-auto-rows: 200px;
 	}

@@ -1,0 +1,79 @@
+/*Global*/
+
+:root {
+	--color-gray: rgb(59, 59, 59);
+	--color-black: rgb(41, 41, 41);
+	--color-accent-green: rgb(87, 204, 185);
+	--color-accent-orange: rgb(255, 194, 27);
+	--color-font-white: rgb(241, 241, 241);
+	font-family: "Roboto", sans-serif;
+	color: var(--color-font-white);
+}
+
+/*Grid Layout*/
+
+.grid-container {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template: 1fr 6fr / 1fr 5fr;
+	background-color: var(--color-black);
+}
+
+/*Aside*/
+.fa-solid {
+	margin-right: 5px;
+}
+
+.main-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.main-bar img {
+	width: 200px;
+	height: auto;
+}
+
+.title {
+	padding-right: 1rem;
+	font-size: 0.6rem;
+	font-weight: 600;
+}
+
+#aside {
+	grid-row: 1/3;
+	background-color: var(--color-gray);
+	display: grid;
+	grid-template-rows: 1fr 3fr 6fr 1fr;
+}
+
+#aside ul {
+	list-style: none;
+	padding: 0 40px;
+}
+
+#aside ul li {
+	margin-top: 1.5rem;
+}
+
+li a {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+}
+
+#aside ul li a {
+	color: var(--color-font-white);
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+#aside ul li a:hover {
+	color: var(--color-accent-green);
+}
+
+.signature {
+	padding-left: 40px;
+	font-weight: 300;
+	font-size: 0.8rem;
+}

@@ -20,6 +20,88 @@
 	background-color: var(--color-black);
 }
 
+/*Header*/
+
+/*Nav-Bar*/
+.nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	gap: 1rem;
+	width: 95%;
+	margin: 0 auto;
+}
+.left {
+	margin-left: auto;
+}
+.nav-bar img {
+	width: 30px;
+}
+.nav-bar i,
+.username {
+	transition: 0.2s;
+}
+.nav-bar i:hover,
+.username:hover {
+	color: var(--color-accent-green);
+}
+.search-bar {
+	padding-left: 20px;
+	background-color: rgb(255, 255, 255);
+	height: 30px;
+	width: 40vw;
+	border-radius: 2rem;
+	transition: 0.1s;
+}
+.search-bar:focus {
+	outline: 2px solid var(--color-accent-green);
+}
+
+/*Button Bar*/
+.button-bar {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	width: 97%;
+	margin: 0 auto;
+}
+header::after {
+	margin: 0 auto;
+	display: block;
+	content: "";
+	width: 97%;
+	height: 2px;
+	background-color: rgba(255, 255, 255, 0.466);
+}
+.button-bar span {
+	font-size: 0.7rem;
+	font-weight: 300;
+}
+.user-text {
+	margin-left: 10px;
+}
+.button-bar p {
+	font-weight: 500;
+}
+.button-bar img {
+	height: 50px;
+}
+.button {
+	padding: 0.3rem 1rem;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	background-color: var(--color-accent-green);
+	color: white;
+	transition: 0.2s;
+}
+.button:hover {
+	color: var(--color-black);
+	background-color: var(--color-font-white);
+}
+.button:not(last-of-type) {
+	margin-right: 10px;
+}
 /*Aside*/
 .fa-solid {
 	margin-right: 5px;

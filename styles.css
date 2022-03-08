@@ -159,3 +159,36 @@ li a {
 	font-weight: 300;
 	font-size: 0.8rem;
 }
+
+/*Main*/
+
+.main-grid {
+	display: grid;
+	grid-template-columns: 6fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	width: 95%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: left;
+	gap: 1.5rem;
+}
+.main-grid h2 {
+	font-weight: 500;
+	font-size: 1.1rem;
+}
+
+.projects {
+	grid-row: 1/3;
+}
+.project-grid {
+	background-color: var(--color-gray);
+	width: 100%;
+	height: 85%;
+	border-radius: 0.4rem;
+}
+.announcement {
+	grid-column: 2/3;
+}
+.trending {
+	grid-column: 2/3;
+}

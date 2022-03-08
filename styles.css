@@ -272,3 +272,40 @@ li a {
 .user img {
 	height: 1.8rem;
 }
+
+/*Queries*/
+
+@media (max-width: 768px) {
+	#main {
+		background-color: var(--color-black);
+	}
+	.grid-container {
+		display: block;
+	}
+	.main-grid {
+		display: block;
+		height: auto;
+	}
+	.announcements-grid {
+		height: 100%;
+	}
+	#aside {
+		display: block;
+	}
+	.button-bar {
+		width: 100vw;
+		transform: scale(85%);
+	}
+	.main-bar {
+		padding-top: 20px;
+		background-color: var(--color-black);
+	}
+	.signature {
+		margin-top: 30px;
+	}
+	.project-grid {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-auto-rows: 200px;
+	}
+}
